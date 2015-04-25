@@ -1,0 +1,54 @@
+Below Expectations &lt;: <select name="below_exp">
+												<?php
+												$checked = intval($row["below_exp"]);
+												    for ($i=1; $i<=100; $i++)
+												    {
+												    	if ($i % 10 == 0 && $i = $checked) {
+												        ?>
+												            <option name="below_exp_<?php echo $row["ID"]; ?>" value="<?php echo $i;?>" selected><?php echo $i;?></option>
+												        <?php
+												        } else if ($i % 10 == 0) {
+												        ?>
+												            <option name="below_exp_<?php echo $row["ID"]; ?>" value="<?php echo $i;?>"><?php echo $i;?></option>
+												        <?php
+												        }
+												    }
+												?>
+											</select> <br>
+								Meet Expectations &ge;: <select name="meet_exp">
+												<?php
+
+												$checked = intval($row["meet_exp"]);
+
+												    for ($i=1; $i<=100; $i++)
+												    {
+												        if ($i % 10 == 0 && $i = $checked) {
+												        ?>
+												            <option name="meet_exp_<?php echo $row["ID"]; ?>" value="<?php echo $i;?>" selected><?php echo $i;?></option>
+												        <?php
+												        } else if ($i % 10 == 0) {
+												        ?>
+												            <option name="meet_exp_<?php echo $row["ID"]; ?>" value="<?php echo $i;?>"><?php echo $i;?></option>
+												        <?php
+												        }
+												    }
+												?>
+											</select> <br>
+								Exceed Expectations &ge;: <select name="exc_exp">
+												<?php
+												$checked = intval($row["exc_exp"]);
+
+												    for ($i=1; $i<=100; $i++)
+												    {
+												        if ($i % 10 == 0 && $i = $checked) {
+												        ?>
+												            <option name="exc_exp_<?php echo $row["ID"]; ?>" value="<?php echo $i;?>" selected><?php echo $i;?></option>
+												        <?php
+												        } else if ($i % 10 == 0) {
+												        ?>
+												            <option name="exc_exp_<?php echo $row["ID"]; ?>" value="<?php echo $i;?>"><?php echo $i;?></option>
+												        <?php
+												        }
+												    }
+												?>
+											</select>

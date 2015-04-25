@@ -1,0 +1,10 @@
+Gurpreet Singh
+Feburary 18, 2015
+
+Augmentation: The feature of generating random floating numbers has been augmented to the NumberRange DataType.
+
+In the NumberRange.js file, I added the new errors for if the user enters a wrong number. Ex. users selects int, but enters float will generate error. Another addon was that the min value must be less than the max value.
+
+In the NumberRange.class.php file, I added the Example select options for int or float vals. If the user selects floats, then the user see the option of round, floor, ceil or as-is the numbers for the table.
+
+Comments have been added to the source code to explain the augmentation. 
